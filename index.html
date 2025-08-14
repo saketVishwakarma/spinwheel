@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Spinner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PAGE 1: Add Players -->
+    <div id="page1">
+        <h1>🎯 Player Spinner</h1>
+        <div class="input-section">
+            <input type="text" id="playerName" placeholder="Enter player name">
+            <button class="btn" id="addPlayer">Add Player</button>
+        </div>
+        <div id="playerList"></div>
+        <button class="btn start-btn" id="startGame">Go to Spin ➡️</button>
+    </div>
+
+    <!-- PAGE 2: Spin Wheel -->
+    <div id="page2" style="display:none;">
+        <h1>🎡 Spin the Wheel</h1>
+        <canvas id="wheelCanvas" width="400" height="400"></canvas>
+        <button class="btn spin-btn" id="spinBtn">Spin</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
